@@ -1,0 +1,5 @@
+pip list > requirement.txt
+
+https://virtualenv.pypa.io/en/latest/user_guide.html
+
+.\.venv\Scripts\activate
