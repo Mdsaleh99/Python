@@ -1,3 +1,4 @@
+import this
 print("hello world")
 
 def chai(n):
