@@ -14,4 +14,6 @@
 - None : None
 - Funtions, modules, classes
 
-- Advance: Decorators, Generators, Iterators, MetaProgramming
+- Advance: Decorators, Generators, Iterators, MetaProgramming, datetime, time, timedelta, arrow, collections
+
+delta means difference between 2 things

@@ -107,11 +107,11 @@ print(f"Ratio is G: {ginger_ratio} and C: {cadramom_ratio}")
 ginger_ratio, cadramom_ratio = cadramom_ratio, ginger_ratio # flipping the ratios
 print(f"Ratio is G: {ginger_ratio} and C: {cadramom_ratio}")
 
-print(f"Is cinnamon in masala spices ? {'cinnamon' in masala_spices}") # in keyword works with tuple
-
+print(f"Is cinnamon in masala spices ? {'cinnamon' in masala_spices}") # it is membership testing - "in" is the membership operator used to check if an element exists in a tuple or other collections.
 
 # list methods
 # insert(), sort(), reverse(), pop(), extend(), split() etc
+# reverse() modifies the original list by reversing it in place.
 
 base_liquid = ["water", "milk"]
 extra_flavor = ["ginger"]
@@ -128,3 +128,23 @@ print(f"String brew: {strong_brew}")
 raw_spice_data = bytearray(b"CINNAMON")
 raw_spice_data = raw_spice_data.replace(b"CINNA", b"CARD")
 print (f"Bytes: {raw_spice_data}")
+
+
+# Dictionary
+chai_order = {"type": "Ginger Chai", "size": "Medium", "sugar": 1}
+
+print(f"Is sugar in the order? {'sugar' in chai_order}") # membership testing - "in" is the membership operator used to check if an element exists in a tuple or other collections.
+
+print(f"Order details (keys): {chai_order.keys()}") # return list
+print(f"Order details (values): {chai_order.values()}") # return list
+print(f"Order details (items): {chai_order.items()}") # return list of tuples
+
+
+# collections
+from collections import namedtuple
+
+chai_profile = namedtuple("chaiProfile", ["flavor", "aroma"])
+
+a = 5  
+b = 5  
+print(id(a) == id(b)) # o/p: True    because small integers are cached in python, so a and b point to the same memory location
